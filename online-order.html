@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+    <link rel="stylesheet" href="assets/css/online-order.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="assets/images/teafusion-logo2.png" alt="TeaFusion Logo" class="home-logo" onclick="window.location.href='index.html'">
+        </header>
+        <!-- ***** Menu Area Starts ***** -->
+        <section class="section" id="offers">
+            <div class="section-heading">
+                <h2>Order Your Favorite Drinks</h2>
+            </div>
+            <div class="tabs">
+                <button class="tab-link active" data-tab="milk-tea"><img src="assets/images/tab-icon-01.png" alt=""> Milk Tea</button>
+                <button class="tab-link" data-tab="fusion-coffees"><img src="assets/images/tab-icon-02.png" alt=""> Fusion Coffee</button>
+                <button class="tab-link" data-tab="fruit-tea"><img src="assets/images/tab-icon-03.png" alt=""> Fruit Tea</button>
+            </div>
+            <div class="tab-content">
+                <div id="milk-tea" class="tab-pane active">
+                    <div class="product" data-id="1">
+                        <img src="assets/images/brown-sugar-milk-tea.jpg" alt="brown-sugar-milk-tea">
+                        <div class="product-info">
+                            <h4>Brown Sugar Milk Tea</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Brown Sugar Milk Tea" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="2">
+                        <img src="assets/images/earl-grey-bubble-tea.jpg" alt="earl-grey-bubble-tea">
+                        <div class="product-info">
+                            <h4>Earl Grey Bubble Tea</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Earl Grey Bubble Tea" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="3">
+                        <img src="assets/images/oolong-milk-tea.jpg" alt="oolong-milk-tea">
+                        <div class="product-info">
+                            <h4>Oolong Milk Tea With Cream</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Oolong Milk Tea" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="4">
+                        <img src="assets/images/taro-milk-tea.jpg" alt="taro-milk-tea">
+                        <div class="product-info">
+                            <h4>Cheese Foam Taro Milk Tea</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Taro Milk Tea" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="5">
+                        <img src="assets/images/thai-milk-tea.jpg" alt="thai-milk-tea">
+                        <div class="product-info">
+                            <h4>Thai Green Coconut Milk Tea</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Thai Milk Tea" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="6">
+                        <img src="assets/images/matcha-milk-tea.jpg" alt="matcha-milk-tea">
+                        <div class="product-info">
+                            <h4>Matcha Milk Tea</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Matcha Milk Tea" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Milk Tea products ends here -->
+                </div>
+                <div id="fusion-coffees" class="tab-pane">
+                    <div class="product" data-id="7">
+                        <img src="assets/images/roast-nut-latte.jpg" alt="roast-nut-latte">
+                        <div class="product-info">
+                            <h4>Roasted Nut Latte</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Roasted Nut Latte" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="8">
+                        <img src="assets/images/butterfly-pea-tea-latte.jpg" alt="butterfly-pea-tea-latte">
+                        <div class="product-info">
+                            <h4>Butterfly Pea Tea Latte</h4>
+                            <div class="price">$5.95</div>
+                            <button class="add-to-cart" data-name="Butterfly Pea Tea Latte" data-price="5.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="9">
+                        <img src="assets/images/caramel-macchiato.jpg" alt="caramel-macchiato">
+                        <div class="product-info">
+                            <h4>Caramel Macchiato</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Caramel Macchiato" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="10">
+                        <img src="assets/images/coconut-avocado-latte.jpg" alt="coconut-avocado-latte">
+                        <div class="product-info">
+                            <h4>Coconut Avocado Latte</h4>
+                            <div class="price">$7.5</div>
+                            <button class="add-to-cart" data-name="Coconut Avocado Latte" data-price="7.5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="11">
+                        <img src="assets/images/sea-salt-latte.jpg" alt="sea-salt-latte">
+                        <div class="product-info">
+                            <h4>Sea Salt Cheese Latte</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Sea Salt Cheese Latte" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="12">
+                        <img src="assets/images/kiwi-americano.jpg" alt="kiwi-americano">
+                        <div class="product-info">
+                            <h4>Kiwi Americano</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Kiwi American" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Fusion Coffees products ends here -->
+                </div>
+                <div id="fruit-tea" class="tab-pane">
+                    <div class="product" data-id="13">
+                        <img src="assets/images/peach-straw-tea.jpg" alt="peach-straw-tea">
+                        <div class="product-info">
+                            <h4>Peach and strawberry Tea</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Peach Fruit Tea" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="14">
+                        <img src="assets/images/lemon-tea.jpg" alt="lemon-tea">
+                        <div class="product-info">
+                            <h4>Lemon Tea with Jelly</h4>
+                            <div class="price">$6.5</div>
+                            <button class="add-to-cart" data-name="Lemon Tea" data-price="6.5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="15">
+                        <img src="assets/images/lychee-jasmine-tea.jpg" alt="lychee-jasmine-tea">
+                        <div class="product-info">
+                            <h4>Lychee Jasmine Green Tea</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Lychee Jasmine Greenn Tea" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="16">
+                        <img src="assets/images/mango-pomelo-sago.jpg" alt="mango-pomelo-sago">
+                        <div class="product-info">
+                            <h4>Mango Pomelo Sago Fruit Tea</h4>
+                            <div class="price">$7.5</div>
+                            <button class="add-to-cart" data-name="Mango Pomelo Sago Fruit Tea" data-price="7.5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="17">
+                        <img src="assets/images/passion-fruit-tea.jpg" alt="passion-fruit-tea">
+                        <div class="product-info">
+                            <h4>Passion Fruit Tea With Jelly</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Passion Fruit Tea" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="18">
+                        <img src="assets/images/pineapple-tea.jpg" alt="pineapple-tea">
+                        <div class="product-info">
+                            <h4>Pineapple Fruit Tea</h4>
+                            <div class="price">$6.95</div>
+                            <button class="add-to-cart" data-name="Pineapple Fruit Tea" data-price="6.95">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Fruit Tea products ends here -->
+                </div>
+            </div>
+        </section>
+        <!-- ***** Cart Section Starts ***** -->
+        <section class="cart-section">
+            <div class="cart">
+                <h2>Cart (<span id="cart-count">0</span>)</h2>
+                <div class="cart-container" id="cart-container">
+                    <ul id="cart-items"></ul>
+                    <div class="tax-estimate">
+                        <input type="text" id="zip-code" placeholder="Enter ZIP code" />
+                        <button id="estimate-tax-button">Estimate Tax</button>
+                    </div>
+                    <div class="discount-code"></div>
+                        <input type="text" id="discount-code" placeholder="Enter Discount Code" />
+                        <button id="apply-discount-button">Apply Discount</button>
+                    </div>
+                    <div class="cart-summary"></div>
+                        <div class="price-row">
+                            <p>Subtotal: $<span id="subtotal-price">0.00</span></p>
+                        </div>
+                        <div class="price-row">
+                            <p>Tax: $<span id="tax-price">0.00</span></p>
+                        </div>
+                        <div class="price-row">
+                            <p>Discount: -$<span id="discount-amount">0.00</span></p>
+                        </div>
+                        <div class="price-row">
+                            <p>Total: $<span id="total-price">0.00</span></p>
+                        </div>
+                    </div>
+                    <button id="checkout-button"><img src="assets/images/checkout-icon.png" alt="Checkout" class="checkout-icon"> Checkout</button>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Random Tea Fact Section Starts ***** -->
+        <section class="random-fact-section">
+            <h2>Interesting Tea Fact</h2>
+            <p id="tea-fact"></p>
+            <button id="fetch-fact-button">I want to know</button>
+        </section>
+    </div>
+    </div>
+    <script src="assets/js/online-order.js"></script>
+</body>
+</html>
